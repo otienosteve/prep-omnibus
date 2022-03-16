@@ -1,7 +1,32 @@
+:root {
+  --main-color: orange;
+  --alt-color: green;
+}
+
 p {
   background-color: aquamarine;
-  color: orange;
+  color: var(--main-color);
   position: fixed;
-  top: 20px;
+  top: 500px;
   left: 50px;
+  display: none;
+}
+#background {
+  background-image: url("https://picsum.photos/300/200");
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.just {
+  display: flex;
+  width: 100vw;
+  height: 50px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.inside {
+  width: 20%;
+  height: 70%;
+  background-color: blue;
 }

@@ -82,39 +82,39 @@ function <name>(arg1, arg2, arg3,argN){
 */
 
 
-// nameerr=document.getElementById("leneerr");
-// emailerr=document.getElementById('emailerr');
-// txterr=document.getElementById('txterr');
-// numerr=document.getElementById('numerr');
+nameerr=document.getElementById("leneerr");
+emailerr=document.getElementById('emailerr');
+txterr=document.getElementById('txterr');
+numerr=document.getElementById('numerr');
 
-// document.getElementById("myForm").addEventListener("submit", (evt)=>{
-//     var email= document.getElementById("email").value;
+document.getElementById("myForm").addEventListener("submit", (evt)=>{
+    evt.preventDefault();
+    var email= document.getElementById("email").value;
+    let isError=false
+    var uname=document.getElementById("name").value;
 
-//     var uname=document.getElementById("name").value;
-
-//     var textA=document.getElementById("txt").value;
-//     if(uname.length<4){
-//     c(uname.length)
-//     evt.preventDefault();
-//     nameerr.textContent="your name should be at least 4 characters"
-//     }
-//     if(uname.match(/[0-9]/g)!==null){
-//     evt.preventDefault();
-//     numerr.textContent="your name should Not  contain Numbers"
-//     }
-//     if(!email.includes('@')){
-//         evt.preventDefault();
-//         emailerr.textContent="Enter A valid email"
-//     }
-//     if(textA.split(' ').length<=10){
-//         evt.preventDefault()
+    var textA=document.getElementById("txt").value;
+    if(uname.length<4){
+        !isError
+    nameerr.textContent="your name should be at least 4 characters"
+    }
+    if(uname.match(/[0-9]/g)!==null){
+        !isError
+    numerr.textContent="your name should Not  contain Numbers"
+    }
+    if(!email.includes('@')){
+        !isError
+        emailerr.textContent="Enter A valid email"
+    }
+    if(textA.split(' ').length<=10){
+        !isError
+        txterr.textContent="You should include more than 10 words in your comment";
+    }
+    if(isError===false){
         
-//         txterr.textContent="You should include more than 10 words in your comment";
-//     }
-
-
-
-// })
+    }
+    
+})
 // document.getElementById("toggle").addEventListener("click",()=>{
 //     if(document.getElementById("back").style.backgroundColor==="black"){
 //         document.getElementById("back").style.backgroundColor="white"
@@ -151,19 +151,19 @@ function <name>(arg1, arg2, arg3,argN){
 // }
 // c(person.describe())
 
-class obj{
+// class obj{
 
-    constructor(name, age, description){
-        this.age=age;
-        this.name=name;
-        this.description=description;
-    }
-   description(){
-        c(this.age+ " "+this.name+" "+this.description) 
-    }
-}
+//     constructor(name, age, description){
+//         this.age=age;
+//         this.name=name;
+//         this.description=description;
+//     }
+//    description(){
+//         c(this.age+ " "+this.name+" "+this.description) 
+//     }
+// }
 
-let person= new obj("Beatrice",60,"Student");
-c(person.description)
+// let person= new obj("Beatrice",60,"Student");
+// c(person.description)
 
 
